@@ -1,16 +1,14 @@
 // CLASE 5-------------------------------------------------------------
-
-// 
-
 import './App.css'
-import ChildComponent from './C4/mesa-trabajo-pg/Components/ChildComponent'
+import Home from './C5/Pages/Home'
+import Shop from './C5/Pages/Shop'
 
-const App = () => {
+const App = () =>  {
   return (
-    <div>
-      {/* nombre como prop */}
-      <ChildComponent nombre="Maria"/>
-    </div>
+    <>
+      <Home/>
+      <Shop/>
+    </>
   )
 }
 

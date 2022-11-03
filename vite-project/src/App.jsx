@@ -1,12 +1,13 @@
-// CLASE 6-------------------------------------------------------------
+// CLASE 8-------------------------------------------------------------
 import './App.css'
-import Child from './C6/Components/Child'
+import Register from './C8/Pages/Register'
+
 
 
 const App = () =>  {
   return (
     <>
-      <Child/>
+      <Register/>
     </>
   )
 }

@@ -5,9 +5,6 @@ const TodoAdded = (added) => {
     return (
     <>
     <h2>Tareas agregadas</h2>
-    <ul>
-        {/* renderizar */}
-    </ul>
     </>
   )
 }

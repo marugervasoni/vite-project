@@ -27,7 +27,7 @@ const Pedidos = () => {
             {/* (--si producto fuera un array debo mapear)  */}
         {/* {producto ? producto.map(item => <Pedido producto={producto}/>) : null} */}
         
-        {/* 6. a) modificar evento click del boton */}
+        {/* 6. a) modificar evento click del boton (agregando setProducto en null) */}
         <button onClick={() => setProducto(null)}>Cancelar pedido</button>
     </>
   )

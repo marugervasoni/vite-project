@@ -1,13 +1,13 @@
 // CLASE 13-------------------------------------------------------------
-import { useState } from 'react'
 import './App.css'
-import Pedido from './C13/Components/Pedido'
+import Pedidos from './C13/Components/Pedidos'
+
 
 const App = () =>  {
   
   return (
   <>
-  <Pedido/>
+    <Pedidos/>
   </>    
   )
 }

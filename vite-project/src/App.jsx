@@ -1,15 +1,2 @@
-// CLASE 13-------------------------------------------------------------
-import './App.css'
-import Pedidos from './C13/Components/Pedidos'
+// CLASE 14-------------------------------------------------------------
 
-
-const App = () =>  {
-  
-  return (
-  <>
-    <Pedidos/>
-  </>    
-  )
-}
-
-export default App

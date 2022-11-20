@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 const Pedido = ({producto}) => {
   // 8. creo useEffect para desmontar comp en caso de cancelacion --> agrego array deps y un return para ello
   useEffect(() => {
-    // 9. ademas concologue para actualizacion del comp
+    // 9. ademas consologueo para actualizacion del comp
     console.log('el componente fue actualizado');
 
     return() => {

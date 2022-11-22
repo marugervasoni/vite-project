@@ -1,17 +1,21 @@
-// CLASE 14-------------------------------------------------------------
+// CLASE ______-------------------------------------------------------------
+import { Link } from 'react-router-dom'
 import './App.css'
-import GetLista from './C14/Components/GetLista'
-import { useState } from 'react'
-import PostComentario from './C14/Components/PostComentario'
 
 const App = () =>  {
   
-  // const url = "https://jsonplaceholder.typicode.com/comments"
-
-  // const [comentarios, setComentarios] = useState([])
   
   return (
-  <> 
+  <>
+
+   {/*agrego par router dom  */}
+    <nav>
+      <Link to="/home">Home</Link>
+      <Link to="/about">About</Link>
+      <Link to="/faqs">Faqs</Link>
+    </nav>
+    
+  {/* modificar */}
     <PostComentario/>
     <GetLista />
   </>    

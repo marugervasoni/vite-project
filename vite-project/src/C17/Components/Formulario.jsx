@@ -1,29 +1,30 @@
 import React from 'react'
 import { useState } from 'react';
+import Header from '../Pages/Header';
 
 const Formulario = () => {
-  
-    const [textButton, setTextButton] = useState(["Submit"])
 
-    const handleChange = (e) => {
-        setTextButton(textButton, e.target.value)
-    }
+    const [textInput, setTextInput] = useState([])
+    console.log(textInput);
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setTextInput("");    
+        e.target.value = "";
     }
 
     return (
     <>
-        <h1>Cambia el texto del botón</h1>
+        <Header textInput={textInput}/>
+        <h1>Cambiá el texto del botón</h1>
         <form>
-            <input type="text" name="InputText"placeholder='ingrese texto' onChange={handleChange}/>
-            <button onClick={()=>{}}>{textButton}</button>
+            <input type="text" name="texto" placeholder='ingrese texto' onChange={(e) => setTextInput(e.target.value)}/>
+            {/* <input type="text" name="texto" placeholder='ingrese texto'/> */}
+            {/* <button onClick={handleSubmit}>{textButton}</button> */}
+            <button style={{color: 'yellow'}} onClick={handleSubmit}>Submit</button>
         </form>
     </>
   )
 }
 
 export default Formulario
-
-// HACER QUE FUNCION EL TEXTO (QUE SE PASE AL BOTON)
